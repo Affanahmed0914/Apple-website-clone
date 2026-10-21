@@ -1,0 +1,542 @@
+@import url('https://googleapis.com');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    border: border-box;
+
+}
+
+.nav-bar {
+    height: 45px;
+    background-color: #1d1d1f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-logo {
+    height: 45px;
+    width: 30px;
+    margin-right: 30px;
+    
+}
+
+.logo {
+    margin-top: 6px;
+    color: #ffffffcc ;
+    font-size: 20px;
+}
+
+.nav-ops p {
+    display: inline;
+    color: #bdbdc0;
+
+}
+
+.nav-ops p:hover {
+    color: white;
+}
+
+.nav-ops {
+    width: 65%;
+    font-size: 12.5px;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-search {
+    height: 44px;
+    color: #ffffffcc;
+    align-items: center;
+    display: flex;
+    margin-left: -85px;
+    font-size: 15px;
+}
+
+.nav-bag {
+    height: 44px;
+    color: #ffffffcc;
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+    font-size: 15px;
+
+}
+
+.hero-sec {
+    height: 750px;
+    width: 100%;
+    background-color: #000;
+}
+
+.hero-logo {
+    background-image: url(WWDC26.png);
+    height: 220px;
+    width: 420px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0 auto;
+    
+    
+
+    
+}
+
+
+.hero-sub {
+    color: white;
+    font-size: 27px;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 0.6;
+    margin-top: -85px;
+    letter-spacing: -0.022em;
+    
+    
+}
+
+.hero-sub2 {
+    color: #86868b;
+    font-size: 18px;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin-top: 15px;
+
+
+}
+
+.hero-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    margin-top: 20px;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+}
+
+.btn {
+    padding: 11px 21px;
+    display: inline-block;
+    border-radius: 900px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -0.022em;
+    line-height: 1.17;
+    box-sizing: border-box;
+    
+}
+
+.btn-filled {
+    background-color: rgb(0, 113, 227);
+
+}
+
+.btn-outlined {
+    color: rgb(0, 113, 227);
+    background-color: transparent;
+    border: 1px solid rgb(0, 113, 227);
+}
+
+.btn-outlined:hover {
+    background-color: rgb(0, 113, 227);
+    color: white;
+}
+
+.hero-vid {
+    width: 100%;
+    max-width: 1220px;
+    height: auto;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.content1 {
+    height: 690px;
+    width: 100%;
+    margin-top: 15px;
+    
+
+}
+
+.content-child {
+    background-image: url(child.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.content-title {
+    color: white;
+    font-size: 56px;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    line-height: 1.07;
+    font-family: "Inter", "SF Pro Display", "-apple-system", sans-serif;
+    margin: 0;
+
+
+}
+
+.content-sub {
+    color: #f5f5f7;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: -0.011em;
+    line-height: 1.23;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-family: "Inter", "SF Pro Display", "-apple-system", sans-serif;
+ 
+}
+.content-text {
+    position: absolute;
+    bottom: 60px; 
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.content-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    margin-top: 20px;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+}
+    
+.content2 {
+    height: 695px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.iphone {
+    background-image: url(iphone.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.content2-title {
+    color: #1d1d1f;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.07;
+    letter-spacing: 0.005em;
+    font-family: "Inter", "SF Pro Display", "-apple-system", sans-serif;
+
+}
+
+.content2-sub {
+    color: #1d1d1f;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: -0.007em;
+    line-height: 1.14;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-family: "Inter", "SF Pro Display", "-apple-system", sans-serif;
+
+}
+
+.content2-text {
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.content2-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    margin-top: 20px;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 17px;    
+}
+
+.content3 {
+    position: relative;
+    width: 100%;
+    height: 695px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.fathers-vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.content3-text {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 60px;
+    text-align: center;
+    
+
+}
+
+.content3-title {
+    color: #1d1d1f;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.07;
+    letter-spacing: 0.005em;
+    font-family: "Inter", "SF Pro Display", "-apple-system", sans-serif;
+}
+
+.content3-sub {
+    color: #1d1d1f;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: -0.007em;
+    line-height: 1.14;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-family: "Inter", "SF Pro Display", "-apple-system", sans-serif;
+}
+
+.content3-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    margin-top: 20px;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+
+}
+
+.content4 {
+    height: 695px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.college {
+    background-image: url(mac.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.content4-title {
+    color: #1d1d1f;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.07;
+    letter-spacing: 0.005em;
+    font-family: "Inter", "SF Pro Display", "-apple-system", sans-serif;
+}
+
+.content4-sub {
+    color: #1d1d1f;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: -0.007em;
+    line-height: 1.14;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-family: "Inter", "SF Pro Display", "-apple-system", sans-serif;
+}
+
+.content4-text {
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.content4-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    margin-top: 20px;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 17px; 
+}
+
+.content5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    margin-top: 15px;
+}
+
+.box {
+    height: 580px;
+    width: calc(50% - 6px);
+    
+    
+}
+
+.box-text {
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.img1 {
+    background-image: url(macair.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.box-title {
+    color: #1d1d1f;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 0.009em;
+    font-family: "Inter", "SF Pro Display", "-apple-system", sans-serif;
+}
+
+.box-sub {
+    color: #1d1d1f;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.011em;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-family: "Inter", "SF Pro Display", "-apple-system", sans-serif;
+}
+
+.img2 {
+    background-image: url(ipadair.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.box-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    margin-top: 20px;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.img3 {
+    background-image: url(pro.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.box3-title {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 0.009em;
+    font-family: "Inter", "SF Pro Display", "-apple-system", sans-serif;
+}
+
+.box3-sub {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.011em;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-family: "Inter", "SF Pro Display", "-apple-system", sans-serif;
+}
+
+.img4 {
+    background-image: url(iwatch.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.title-img {
+    height: 55px;
+    width: auto;
+    margin-top: 60px;
+    
+}
+
+.box4-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.box4-sub {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.011em;
+    line-height: 1.2;
+    margin-top: -5px;
+    margin-bottom: 16px;
+    font-family: "Inter", "SF Pro Display", "-apple-system", sans-serif;
+    text-align: center;
+}
+
